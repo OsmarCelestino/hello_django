@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
 
 # Create your views here.
-def hello(request, nome, idade):
-    return HttpResponse('hello {} de {}' .format(nome,idade))
+def hello(request, num1, num2):
+    soma = num1 + num2
+    return HttpResponse('A soma dos numeros é {}' .format(soma))
